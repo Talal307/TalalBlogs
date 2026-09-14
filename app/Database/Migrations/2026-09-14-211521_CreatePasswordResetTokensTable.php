@@ -32,7 +32,9 @@ class CreatePasswordResetTokensTable extends Migration
                 'null' => true,
             ],
         ]);
+ 
 
+        
         $this->forge->addKey('id', true);
         $this->forge->addKey('email');
         $this->forge->createTable('password_reset_tokens');
